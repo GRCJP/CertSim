@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CertSim — a modular certification-exam simulator engine with adaptive study modes and an offline Kindle study pack" />
+    <title>CertSim — Exam Simulator</title>
+    <script>
+      // E-ink Kindles struggle with modern React. Offer an immediate escape hatch
+      // to the static study pack (no modules / no SPA). Skip when ?app=1 is set.
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search || '');
+          if (params.get('app') === '1') return;
+          if (params.get('kindle') === '1' || params.get('offline') === '1' || params.get('memory') === '1') {
+            window.location.replace('kindle/app.html');
+            return;
+          }
+          var ua = (navigator.userAgent || '').toLowerCase();
+          // Fire / Silk can run the interactive app; bare e-ink Kindles often cannot
+          if (ua.indexOf('silk') !== -1 || ua.indexOf('kindle fire') !== -1) {
+            window.location.replace('kindle/app.html');
+            return;
+          }
+          if (ua.indexOf('kindle') !== -1) {
+            window.location.replace('kindle/app.html');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="font-family: Georgia, serif; padding: 1rem;">
+        JavaScript is disabled.
+        <a href="kindle/app.html">Open Interactive App</a>
+        (or <a href="kindle/mem-001.html">Memory Drill</a> without JavaScript).
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

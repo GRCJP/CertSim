@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+/* Better contrast for light mode green text */
+.text-green-900 {
+  color: #14532d !important; /* Much darker green for better contrast */
+}
+
+.text-green-800 {
+  color: #166534 !important; /* Darker green for better contrast */
+}
+
+.text-green-700 {
+  color: #15803d !important; /* Darker green for better contrast */
+}
+
+.text-green-600 {
+  color: #16a34a !important; /* Darker green for better contrast */
+}
+
+/* Kindle Mode Styles - Only applied when body has kindle-mode class */
+body.kindle-mode {
+  /* High contrast and larger text for e-ink displays */
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+}
+
+body.kindle-mode * {
+  text-shadow: none !important;
+  box-shadow: none !important;
+  border-radius: 2px !important;
+}
+
+body.kindle-mode .bg-gray-50 {
+  background-color: #FFFFFF !important;
+}
+
+body.kindle-mode .bg-slate-900 {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+body.kindle-mode .text-gray-900,
+body.kindle-mode .text-slate-900,
+body.kindle-mode .text-white {
+  color: #000000 !important;
+}
+
+body.kindle-mode .text-gray-700,
+body.kindle-mode .text-gray-600,
+body.kindle-mode .text-slate-700,
+body.kindle-mode .text-slate-600 {
+  color: #333333 !important;
+}
+
+body.kindle-mode .text-gray-500,
+body.kindle-mode .text-slate-500 {
+  color: #666666 !important;
+}
+
+/* Simplify buttons for Kindle mode */
+body.kindle-mode button {
+  border: 2px solid #000000 !important;
+  background-color: #F0F0F0 !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  padding: 8px 16px !important;
+  margin: 4px !important;
+}
+
+body.kindle-mode button:hover {
+  background-color: #E0E0E0 !important;
+}
+
+/* Make inputs more readable */
+body.kindle-mode input,
+body.kindle-mode select,
+body.kindle-mode textarea {
+  border: 2px solid #000000 !important;
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  font-size: 16px !important;
+  padding: 8px !important;
+}
+
+/* Simplify cards and containers */
+body.kindle-mode .bg-white,
+body.kindle-mode .bg-gray-800,
+body.kindle-mode .bg-slate-800 {
+  background-color: #F8F8F8 !important;
+  border: 1px solid #000000 !important;
+}
+
+/* Make links more visible */
+body.kindle-mode a {
+  color: #0000FF !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
+
+/* Ensure good contrast for all text */
+body.kindle-mode .text-green-600,
+body.kindle-mode .text-emerald-600 {
+  color: #006600 !important;
+}
+
+body.kindle-mode .text-blue-600 {
+  color: #0000FF !important;
+}
+
+body.kindle-mode .text-red-600 {
+  color: #CC0000 !important;
+}
+
+body.kindle-mode .text-yellow-600 {
+  color: #CC6600 !important;
+}
+
+/* Remove complex gradients and transitions */
+body.kindle-mode * {
+  transition: none !important;
+  animation: none !important;
+  background-image: none !important;
+}
+
+/* Ensure touch targets are large enough */
+body.kindle-mode button,
+body.kindle-mode .clickable {
+  min-height: 44px !important;
+  min-width: 44px !important;
+}
+

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "Q1",
+    "domain": "Governance & Policy",
+    "question": "Northwind Logistics is a mid-sized shipping company that recently adopted a formal management system to coordinate its operations across three regional hubs. Leadership wanted a single, documented way to set objectives, assign responsibilities, and review performance each quarter.\n\nDuring the first review cycle, the team found that some procedures existed only as informal habits and were not written down anywhere.\n\nWhat should Northwind Logistics do first to bring its informal procedures under the management system?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Document the procedures and assign clear ownership",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "Wait until the next annual audit to record them",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Remove the procedures because they are undocumented",
+        "correct": false
+      }
+    ],
+    "explanation": "A management system relies on documented information with clear ownership so that activities are repeatable and can be reviewed. Capturing the procedures and assigning owners is the appropriate first step.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q2",
+    "domain": "Governance & Policy",
+    "question": "A software team maintains a policy library that everyone is expected to follow. A new engineer notices two policies that appear to contradict each other about how long records must be kept.\n\nHow should the team handle the conflicting retention policies?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Follow whichever policy is easier to apply",
+        "correct": false
+      },
+      {
+        "id": "B",
+        "text": "Escalate the conflict so the policies can be reconciled and re-approved",
+        "correct": true
+      },
+      {
+        "id": "C",
+        "text": "Ignore both policies until someone complains",
+        "correct": false
+      }
+    ],
+    "explanation": "Conflicting documented policies undermine consistency. The conflict should be escalated to the policy owner and reconciled through the normal approval process.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q3",
+    "domain": "Risk Management",
+    "question": "Acme Analytics is assessing risks to a new customer-facing service. The team lists possible events, but has not yet decided which risks to address first.\n\nWhich approach best helps Acme prioritize which risks to treat first?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Treat every identified risk equally",
+        "correct": false
+      },
+      {
+        "id": "B",
+        "text": "Rank risks by likelihood and impact, then treat the highest first",
+        "correct": true
+      },
+      {
+        "id": "C",
+        "text": "Only treat risks that have already caused an incident",
+        "correct": false
+      }
+    ],
+    "explanation": "Prioritizing by a combination of likelihood and impact focuses limited resources on the risks that matter most, which is the core idea of risk-based decision making.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q4",
+    "domain": "Risk Management",
+    "question": "A hospital introduces an automated scheduling tool. Before go-live, the risk team wants a way to reduce the chance that a single failure disrupts all clinics at once.\n\nWhich control most directly reduces the impact of a single point of failure?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Adding a documented fallback and redundancy for the tool",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "Training more staff on the tool",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Publishing the tool’s roadmap",
+        "correct": false
+      }
+    ],
+    "explanation": "Redundancy and a documented fallback limit the blast radius of a single failure, directly reducing impact if the primary system becomes unavailable.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q5",
+    "domain": "Risk Management",
+    "question": "A residual risk is best described as the risk that remains after which of the following?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "After controls or treatments have been applied",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "Before any assessment is performed",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Only after an incident occurs",
+        "correct": false
+      }
+    ],
+    "explanation": "Residual risk is what remains once selected controls and treatments have been applied to the original (inherent) risk.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q6",
+    "domain": "Operations",
+    "question": "Bluepeak Manufacturing runs internal reviews to check that its processes work as intended. After each review, findings are recorded, but the team is unsure what to do with them.\n\nWhat is the primary purpose of recording findings from an internal review?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "To drive corrective action and continual improvement",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "To satisfy curiosity with no follow-up",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "To replace the need for management review",
+        "correct": false
+      }
+    ],
+    "explanation": "Findings feed corrective action and continual improvement; recording them without acting on them provides little value.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q7",
+    "domain": "Operations",
+    "question": "In a continual-improvement cycle, what typically follows the \"Check\" step?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Act on the results to improve",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "Delete the plan",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Restart planning from scratch every time",
+        "correct": false
+      }
+    ],
+    "explanation": "The common Plan–Do–Check–Act cycle moves from checking results to acting on them, feeding improvements back into the next plan.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q8",
+    "domain": "Operations",
+    "question": "An operations team keeps a log of every change made to its production environment. During an incident, they use the log to find what changed just before the problem started.\n\nWhich benefit of change logging does this scenario illustrate?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Traceability that supports faster root-cause analysis",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "Reducing the number of changes to zero",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Eliminating the need for backups",
+        "correct": false
+      }
+    ],
+    "explanation": "A change log provides traceability, letting teams correlate incidents with recent changes and reach root cause faster.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q9",
+    "domain": "Governance & Policy",
+    "question": "Who is ultimately accountable for the effectiveness of an organization’s management system?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Top management",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "A single external auditor",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Whoever reports the most incidents",
+        "correct": false
+      }
+    ],
+    "explanation": "Top management holds ultimate accountability for the management system, including providing resources and reviewing its performance.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q10",
+    "domain": "Governance & Policy",
+    "question": "What is the main purpose of defining the scope of a management system?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "To make the scope as large as possible",
+        "correct": false
+      },
+      {
+        "id": "B",
+        "text": "To clarify the boundaries and applicability of the system",
+        "correct": true
+      },
+      {
+        "id": "C",
+        "text": "To avoid documenting anything",
+        "correct": false
+      }
+    ],
+    "explanation": "Defining scope sets clear boundaries and applicability so everyone understands what the management system covers.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q11",
+    "domain": "Risk Management",
+    "question": "Which statement best describes a risk owner?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The person accountable for managing a specific risk",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "The person who first noticed the risk",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Anyone affected by the risk",
+        "correct": false
+      }
+    ],
+    "explanation": "A risk owner is the individual with accountability and authority to manage a particular risk and its treatment.",
+    "reference": "",
+    "important": false
+  },
+  {
+    "id": "Q12",
+    "domain": "Operations",
+    "question": "Why should objectives in a management system be measurable?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "So progress and achievement can be evaluated",
+        "correct": true
+      },
+      {
+        "id": "B",
+        "text": "So they can be ignored more easily",
+        "correct": false
+      },
+      {
+        "id": "C",
+        "text": "Because measurement is optional and cosmetic",
+        "correct": false
+      }
+    ],
+    "explanation": "Measurable objectives let an organization track progress and determine whether the objective has been achieved.",
+    "reference": "",
+    "important": false
+  }
+]
